@@ -201,7 +201,7 @@ def buy_etf(code):
             if ret == 4:
                 remain_time = cpStatus.LimitRequestRemainTime
                 printlog('주의: 연속 주문 제한에 걸림. 대기 시간:', remain_time/1000)
-                time.sleep(remain_time/1000) 
+                time.sleep(remain_time/1000)
                 return False
             time.sleep(2)
             printlog('현금주문 가능금액 :', buy_amount)

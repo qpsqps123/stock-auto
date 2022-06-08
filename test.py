@@ -76,8 +76,8 @@ def post_message(token, channel, text):
         data={"channel": channel,"text": text}
     )
     print(response)
- 
-myToken = "xoxb-3576783569431-3604043958593-5CX3S1qpCuH0VRxWf5tgCyct"
- 
-post_message(myToken,"#stock","삼성전자 현재가: " + str(offer))
+
+myToken = "xoxb-3576783569431-3604043958593-my08ae3LKLkWEIsM5lzfuGTD"
+
+post_message(myToken,"#stock", "삼성전자 매도호가: " + str(offer) + "\n" + "삼성전자 매수호가: " + str(bid));
 
